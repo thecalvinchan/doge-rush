@@ -19,7 +19,7 @@ angular.module('alexShibe').config(['$routeProvider',
 
 angular.module('alexShibe').factory('shibeImages', [ 
     function() {
-        var srcImages = ['img/ben.jpg'];
+        var srcImages = ['img/ben.jpg','img/khe.jpg','img/maurice.jpg','img/bryce.jpg','img/eren.jpg','img/matt.jpg','img/ray.jpg','img/alex.jpg'];
         var images = [];
         for (var i=0;i<srcImages.length;i++) {
             var img = new Image;
@@ -48,7 +48,7 @@ angular.module('alexShibe').controller('ToTheMoonController', ['$scope','$cookie
                        name: 'DogeRush',
                        caption: 'Just rushed with Doge',
                        description: (
-                          'Just play 4 Doge Pts' +
+                          'Just play 4 Doge Pts. \n' +
                           'Doge Score eez ' + $scope.score
                        ),
                        link: 'http://thealexpark.com',
@@ -65,7 +65,7 @@ angular.module('alexShibe').controller('ToTheMoonController', ['$scope','$cookie
                 } else {
                     alert("Wai you no liek Doge?");
                 }
-            }
+            });
         };
     }
 ]);
